@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Profile Page</h1>
+        <img src="prof photo.jpg" alt="Profile Picture" class="profile-img">
+    </header>
+    
+    <main>
+        <section id="bio">
+            <h2>About Me</h2>
+            <p>Hello! I'm Kevin Opanga, a passionate web developer. This is a brief bio about me.</p>
+            <button id="toggleBio">Read More</button>
+            <div id="moreBio" style="display: none;">
+                <p>Here is some more information about my background and experiences...</p>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </section>
+        
+        <section class="projects">
+            <h2>Projects</h2>
+            <p>Here are some projects I've worked on:</p>
+            <ul>
+                <li>Project 1 - A web application for pizza ordering</li>
+                <li>Project 2 - Hotel booking web application</li>
+            </ul>
+        </section>
+
+        <section id="newsletter">
+            <h2>Subscribe to my Newsletter</h2>
+            <form id="subscribeForm" onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+                <p id="error-message" class="error-message" style="display:none;"></p>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Profile. All rights reserved.</p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>
